@@ -44,7 +44,7 @@ panel: mmu_filaments
 name: {{ gettext('Spoolman...') }}
 icon: spoolman
 panel: mmu_spoolman
-enable: {{ moonraker.spoolman }}
+enable: {{ printer.spoolman }}
 show_disabled: True
 
 [menu __main,__print mmu preload_gates]
