@@ -85,15 +85,6 @@ managed_services = klipper
 enable_file_preprocessor = True
 enable_toolchange_next_pos = True
 
-[update_manager KlipperScreen]
-type = git_repo
-path = /home/biqu/KlipperScreen
-origin = https://github.com/moggieuk/KlipperScreen-Happy-Hare-Edition.git
-env = /home/biqu/.KlipperScreen-env/bin/python
-requirements = scripts/KlipperScreen-requirements.txt
-install_script = scripts/KlipperScreen-install.sh
-managed_services = KlipperScreen
-
 [update_manager led_effect]
 type = git_repo
 path = ~/klipper-led_effect
@@ -112,4 +103,13 @@ is_system_service = False
 managed_services = klipper
 info_tags = 
 	desc=Beacon Surface Scanner
+
+[update_manager KlipperScreen]
+type = git_repo
+path = ~/KlipperScreen
+origin = https://github.com/moggieuk/KlipperScreen-Happy-Hare-Edition.git
+env = ~/.KlipperScreen-env/bin/python
+requirements = scripts/KlipperScreen-requirements.txt
+install_script = scripts/KlipperScreen-install.sh
+managed_services = KlipperScreen
 
