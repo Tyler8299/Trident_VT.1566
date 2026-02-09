@@ -86,6 +86,7 @@ managed_services = klipper
 [mmu_server]
 enable_file_preprocessor = True
 enable_toolchange_next_pos = True
+update_spoolman_location = True
 
 [update_manager led_effect]
 type = git_repo
@@ -114,4 +115,8 @@ env = ~/.KlipperScreen-env/bin/python
 requirements = scripts/KlipperScreen-requirements.txt
 install_script = scripts/KlipperScreen-install.sh
 managed_services = KlipperScreen
+
+[spoolman]
+server = http://192.168.0.123:7912
+sync_rate = 5
 
